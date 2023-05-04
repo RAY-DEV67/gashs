@@ -29,7 +29,7 @@ function App() {
   const [saved, setsaved] = useState([]);
 
   return (
-    <div className="App bodyFont">
+    <div className="App bg-[#282828] bodyFont">
       <ShowCart.Provider value={showcart}>
         <SetShowCart.Provider value={setshowcart}>
           <SetLoadCart.Provider value={setloadCart}>

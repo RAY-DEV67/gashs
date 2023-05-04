@@ -51,7 +51,7 @@ query.get().then((querySnapshot) => {
   }, [search]);
 
   return (
-    <div className="pt-[90px] lg:absolute lg:top-[13%] lg:left-[35%] lg:w-[60%] lg:z-[-1]">
+    <div className="pt-[90px] bg-[#282828] text-[#DE9C10] lg:absolute lg:top-[13%] lg:left-[35%] lg:w-[60%] lg:z-[-1]">
         <Search/>
       <div >
       <p className="mx-[1rem] text-left text-xl">Search Results for {search}:</p>
@@ -70,7 +70,7 @@ query.get().then((querySnapshot) => {
               onClick={() => {
                 navigate(`/Buy/Products/${post.category}/${post.id}`);
               }}
-              className="lg:w-[95%] max-w-4xl"
+              className=" max-w-4xl"
             >
                   <TopCard post={post} />
                 </div>

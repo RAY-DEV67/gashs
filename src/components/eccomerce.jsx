@@ -64,7 +64,7 @@ import {
     return (
       <div className="flex flex-col items-center">
         <div className="flex flex-col items-center">
-        <div className="border-y border-[#86574E] lg:h-[190px] w-[90vw] lg:w-[100%] flex rounded-[10px]">
+        <div className="border-y border-[#DE9C10] lg:h-[190px] w-[90vw] lg:w-[100%] flex rounded-[10px]">
           <div className="w-[40%]">
             <img
               src={post.images}
@@ -79,14 +79,7 @@ import {
             <div>
               <div className="flex justify-between w-[40vw]">
                 <div className="text-left mx-[0.5rem]">
-        {/* {size == post.size1 ? <h1 className="text-[#86574E] font-bold mt-[0.5rem] text-left">
-          {formatCur(post.price1, "en-NG", "NGN")}
-        </h1> : size == post.size2 ? <h1 className="text-[#86574E] font-bold mt-[0.5rem] text-left">
-          {formatCur(post.price2, "en-NG", "NGN")}
-        </h1> : size == post.size3 ? <h1 className="text-[#86574E] font-bold mt-[0.5rem] text-left">
-          {formatCur(post.price3, "en-NG", "NGN")}
-        </h1> : ""} */}
-        <div className="text-[#86574E] font-bold mt-[0.5rem] text-left">
+        <div className="text-[#DE9C10] font-bold mt-[0.5rem] text-left">
         {formatCur(post.price1, "en-NG", "NGN")}
         </div>
       </div>
@@ -95,13 +88,13 @@ import {
                 <div className="Cartloading-spinner"></div>
               </div>
             ) : (
-              <p className="mt-[0.5rem]" onClick={() => {removeCart()}}>X</p>
+              <p className="mt-[0.5rem] text-[#DE9C10]" onClick={() => {removeCart()}}>X</p>
             )}
               
               </div>
               {/* <p>{post.id}</p> */}
               <div className="w-[90%]">
-                <h1 className="text-left mt-[1rem] text-xl">{post.title}</h1>
+                <h1 className="text-left mt-[1rem] text-xl text-[#DE9C10]">{post.title}</h1>
               </div>
             </div>
             <div className="mt-[1rem]">

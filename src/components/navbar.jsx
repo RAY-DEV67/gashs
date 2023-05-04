@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import logo from "../assets/logo.png";
+import logo from "../assets/gashalogo.png";
 import { useEffect, useState, useContext } from "react";
 import db from "../config/firebase";
 import { auth, provider } from "../config/firebase";
@@ -82,11 +82,11 @@ export function Navbar() {
       <div className="hidden lg:block lg:absolute lg:w-[30%] ">
         <Profile/>
       </div>
-      <div className="fixed px-[1rem] w-[100%] navbar bg-[#ffc5b9] z-10">
+      <div className="fixed px-[1rem] w-[100%] navbar bg-[#282828] z-10">
         <div className="flex items-center justify-between">
           <div className="lg:w-[100vw] my-[-1rem] lg:flex lg:flex-col lg:items-center">
             <Link to="/">
-            <img src={logo} alt="logo" className="w-[30%] lg:w-[300px]"/>
+            <img src={logo} alt="logo" className="w-[30%] mt-[-1rem] lg:w-[200px]"/>
           </Link>
           </div>
           <div className="flex justify-between lg:hidden">
@@ -110,7 +110,7 @@ export function Navbar() {
                   stroke={
                     window.location.pathname === "/Profile"
                       ? "#deab24"
-                      : "#000000"
+                      : "#ffffff"
                   }
                   stroke-width="1.5"
                   stroke-linecap="round"
@@ -121,7 +121,7 @@ export function Navbar() {
                   stroke={
                     window.location.pathname === "/Profile"
                       ? "#deab24"
-                      : "#000000"
+                      : "#ffffff"
                   }
                   stroke-width="1.5"
                   stroke-linecap="round"
@@ -151,7 +151,7 @@ export function Navbar() {
                 <g id="SVGRepo_iconCarrier">
                   <path
                     d="M4.78571 5H18.2251C19.5903 5 20.5542 6.33739 20.1225 7.63246L18.4558 12.6325C18.1836 13.4491 17.4193 14 16.5585 14H6.07142M4.78571 5L4.74531 4.71716C4.60455 3.73186 3.76071 3 2.76541 3H2M4.78571 5L6.07142 14M6.07142 14L6.25469 15.2828C6.39545 16.2681 7.23929 17 8.23459 17H17M17 17C15.8954 17 15 17.8954 15 19C15 20.1046 15.8954 21 17 21C18.1046 21 19 20.1046 19 19C19 17.8954 18.1046 17 17 17ZM11 19C11 20.1046 10.1046 21 9 21C7.89543 21 7 20.1046 7 19C7 17.8954 7.89543 17 9 17C10.1046 17 11 17.8954 11 19Z"
-                    stroke="#000000"
+                    stroke="#ffffff"
                     stroke-width="1.5"
                     stroke-linecap="round"
                     stroke-linejoin="round"

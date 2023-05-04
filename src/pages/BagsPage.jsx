@@ -44,13 +44,14 @@ export function ProductsPage() {
       });
   }, []);
 
+  console.log(clothsList.length);
 
-  console.log(clothsList.length)
- 
   return (
     <div>
-      <div className="lg:absolute lg:top-[13%] pt-[90px] lg:left-[35%] lg:z-[-1] lg:w-[60%]">
-        <p className="mt-[rem] font-bold text-2xl text-center border-y border-[#ffc5b9] py-[1rem]">Cadmus Collections</p>
+      <div className="lg:absolute bg-[#282828] lg:top-[13%] pt-[90px] lg:left-[35%] lg:z-[-1] lg:w-[60%]">
+        <p className="mt-[rem] font-bold text-2xl text-center border-y border-[#DE9C10] text-[#DE9C10] py-[1rem]">
+          Gashash Collections
+        </p>
         <Search />
 
         {/* <p className="w-[100%] flex flex-col items-center my-[1rem] loaderContainer">
@@ -65,13 +66,10 @@ export function ProductsPage() {
           {empty ? "No Results Found!!" : ""}
         </p> */}
 
-<div className="flex lg:flex flex-wrap gap-3 justify-center mb-[1rem]">
-        {clothsList.map((post, index) => {
+        <div className="flex lg:flex flex-wrap gap-3 justify-center mb-[1rem]">
+          {clothsList.map((post, index) => {
             return (
-              <div
-              key={index}
-              className="max-w-4xl"
-            >
+              <div key={index} className="max-w-4xl">
                 <TopCard post={post} />
               </div>
             );

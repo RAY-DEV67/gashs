@@ -17,14 +17,14 @@ import "firebase/compat/storage"
 
 // Your web app's Firebase configuration
 const firebaseApp = firebase.initializeApp( {
-    apiKey: "AIzaSyA29NrLMJPZPmWap4bSoNzjlY9ZL4RqMEI",
-    authDomain: "cadmus-c5183.firebaseapp.com",
-    projectId: "cadmus-c5183",
-    storageBucket: "cadmus-c5183.appspot.com",
-    messagingSenderId: "683899945683",
-    appId: "1:683899945683:web:e3e798e8c4f7c6ff5e4a26",
-    measurementId: "G-114YB2PYHS"
-  });
+  apiKey: "AIzaSyDOhRPtUc1nzK821A6xLL5bPAjqw7CHhD8",
+  authDomain: "gasha-39a4e.firebaseapp.com",
+  projectId: "gasha-39a4e",
+  storageBucket: "gasha-39a4e.appspot.com",
+  messagingSenderId: "736932653773",
+  appId: "1:736932653773:web:c72750fa705c7b846cd784",
+  measurementId: "G-LBPWWL3CB7"
+});
 
 // Initialize Firebase
 const app = firebaseApp;

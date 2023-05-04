@@ -147,16 +147,16 @@ export function CheckOut() {
 
 
   return (
-    <div className="pt-[90px] lg:absolute lg:left-[35%] lg:top-[12%] lg:w-[60%]">
+    <div className="pt-[90px] bg-[#282828] lg:absolute lg:left-[35%] lg:top-[12%] lg:w-[60%]">
       {user ? (
         <div>
-         <p className="text-center pt-[1rem] text-2xl">Check-Out</p>
+         <p className="text-center pt-[1rem] text-2xl text-[#DE9C10]">Check-Out</p>
           <div className="flex flex-col items-center justify-center w-[100%] mb-[1rem]">
           </div>
 
           <div className="flex flex-col items-center">
             <div className="form w-[95%] mb-[1rem]">
-              <p className="text-left ml-[1rem] mt-[1rem]">Your Order</p>
+              <p className="text-left ml-[1rem] mt-[1rem] text-[#DE9C10]">Your Order</p>
               <div className="mb-[1rem]">
                 <div className="flex flex-wrap gap-3 justify-center">
                   <p className="w-[100%] flex flex-col items-center loaderContainer">
@@ -182,24 +182,24 @@ export function CheckOut() {
                   })}
                 </div>
               </div>
-              <div className="flex justify-between mx-[1rem] my-[1.5rem] border-y py-[1rem]">
-                <p>SUBTOTAL</p>
-                <p>{sum}</p>
+              <div className="flex justify-between mx-[1rem] my-[1.5rem] border-[#DE9C10] border-y py-[1rem]">
+                <p className="text-[#DE9C10]">SUBTOTAL</p>
+                <p className="text-[#DE9C10]">{sum}</p>
               </div>
             </div>
           </div>
 
           <div className="my-[2rem] mx-[1rem]">
-            <p className="text-left text-2xl">Payment Method</p>
-            <div className="border-[#ffc5b9] border my-[1rem] p-[1rem] text-left">
-              <p className="text-center text-xl mb-[0.5rem]">Direct bank transfer</p>
-              <p>Make your payment of {sum} directly into our bank account</p>
-              <p>Account Number :</p>
-              <p>Bank Name: </p>
-              <p>Account Name: </p>
+            <p className="text-left text-2xl text-[#DE9C10]">Payment Method</p>
+            <div className="border-[#DE9C10] border my-[1rem] p-[1rem] text-left">
+              <p className="text-center text-xl mb-[0.5rem] text-[#DE9C10]">Direct bank transfer</p>
+              <p className="text-[#DE9C10]">Make your payment of {sum} directly into our bank account</p>
+              <p className="text-[#DE9C10]">Account Number :</p>
+              <p className="text-[#DE9C10]">Bank Name: </p>
+              <p className="text-[#DE9C10]">Account Name: </p>
               <div className="mt-[1rem]">
-                <h2 className="text-center text-2xl">Add photo</h2>
-                <p className="text-[12px] mt-[1rem]">
+                <h2 className="text-center text-2xl text-[#DE9C10]">Add photo</h2>
+                <p className="text-[12px] mt-[1rem] text-[#DE9C10]">
                   Add a screenshot or picture of proof of payment
                 </p>
                 <div className="flex flex-col">
@@ -219,15 +219,15 @@ export function CheckOut() {
                 </div>
               </div> 
 
-              <button onClick={upload}  className="text-[#86574E] rounded-[20px] bg-[#ffc5b9] font-bold w-[30%] mt-[2rem] py-[0.5rem] px-[1rem]">Upload</button>
+              <button onClick={upload}  className="text-[#282828] rounded-[20px] bg-[#DE9C10] font-bold w-[30%] mt-[2rem] py-[0.5rem] px-[1rem]">Upload</button>
             </div>
           </div>
 
 
           <div className="flex flex-col items-center">
-            <p className="text-2xl">Shipping Details</p>
+            <p className="text-2xl text-[#DE9C10]">Shipping Details</p>
 
-<form ref={form} onSubmit={sendEmail} className="w-[90%] border-[#ffc5b9] border my-[1rem] flex flex-col px-[1rem] pb-[1rem]">
+<form ref={form} onSubmit={sendEmail} className="w-[90%] border-[#DE9C10] text-[#DE9C10] border my-[1rem] flex flex-col px-[1rem] pb-[1rem]">
       <label className="text-left mt-[0.5rem]">Name</label>
       <input onChange={(e) => {
 setname(e.target.value)
@@ -287,7 +287,7 @@ setstreet(e.target.value)
                      value={productOrder}
                     />
     <div>
-    <input type="submit" value="Place Order" className="text-[#86574E] rounded-[20px] bg-[#ffc5b9] font-bold w-[50%] mt-[2rem] py-[0.5rem] px-[1rem]" />
+    <input type="submit" value="Place Order" className="text-[#282828] rounded-[20px] bg-[#DE9C10] font-bold w-[50%] mt-[2rem] py-[0.5rem] px-[1rem]" />
     
         </div>
         </form>

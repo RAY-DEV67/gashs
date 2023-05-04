@@ -75,10 +75,10 @@ export function Cart() {
   console.log(sum);
 
   return (
-    <div className="pt-[80px]">
+    <div className="pt-[80px] bg-[#282828]">
       {user ? (
         <div className="lg:absolute lg:left-[35%] lg:top-[12%] lg:w-[60%]">
-          <p className="p-[1rem] pageHeader text-2xl text-center">Cart</p>
+          <p className="p-[1rem] pageHeader text-2xl text-center text-[#DE9C10]">Cart</p>
           <div className="flex flex-wrap gap-3 justify-center">
             <p className="w-[100%] flex flex-col items-center loaderContainer">
               {loading ? <LoadingSpinner /> : ""}
@@ -97,9 +97,9 @@ export function Cart() {
 
           {!empty && (
             <div>
-              <div className="flex justify-between mx-[1rem] mt-[3rem] border-y py-[1rem]">
-                <p>SUBTOTAL</p>
-                <p>{sum}</p>
+              <div className="flex justify-between mx-[1rem] mt-[3rem] border-y py-[1rem] border-[#DE9C10]">
+                <p className="text-[#DE9C10]">SUBTOTAL</p>
+                <p className="text-[#DE9C10]">{sum}</p>
               </div>
               <div
                 onClick={() => {
